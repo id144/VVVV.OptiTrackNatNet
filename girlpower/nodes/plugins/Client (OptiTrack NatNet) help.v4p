@@ -1,0 +1,769 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta36.dtd" >
+   <PATCH nodename="C:\Users\Camouflage\Documents\GitHub\VVVV.OptiTrackNatNet\plugins\bin\Debug\x64\Client (OptiTrack NatNet) help.v4p" scrollx="0" scrolly="-720">
+   <BOUNDS type="Window" left="864" top="0" width="18096" height="16116">
+   </BOUNDS>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="3">
+   <BOUNDS type="Node" left="228" top="228" width="5100" height="456">
+   </BOUNDS>
+   <BOUNDS type="Box" left="228" top="228" width="5100" height="456">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="0" values="|Client (OptiTrack NatNet)|">
+   </PIN>
+   <PIN pinname="Output String" slicecount="1" visible="0" values="||">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" visible="1" values="14">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="2">
+   <BOUNDS type="Node" left="228" top="600" width="5100" height="600">
+   </BOUNDS>
+   <BOUNDS type="Box" left="228" top="600" width="6156" height="744">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="0" values="|Send messages and requests to the OptiTrack NatNet server, recieves tracking data.|">
+   </PIN>
+   <PIN pinname="Output String" slicecount="1" visible="0" values="||">
+   </PIN>
+   </NODE>
+   <NODE systemname="RENDERER (EX9)" nodename="Renderer (EX9)" componentmode="InAWindow" id="46">
+   <BOUNDS type="Node" left="3012" top="14037" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="3012" top="14037" width="2400" height="1800">
+   </BOUNDS>
+   <BOUNDS type="Window" left="19656" top="516" width="10044" height="9384">
+   </BOUNDS>
+   <PIN pinname="Layers" visible="1">
+   </PIN>
+   <PIN pinname="View" visible="1">
+   </PIN>
+   <PIN pinname="Projection" visible="1">
+   </PIN>
+   <PIN pinname="Actual Backbuffer Height" visible="1">
+   </PIN>
+   <PIN pinname="Actual Backbuffer Width" visible="1">
+   </PIN>
+   <PIN pinname="Aspect Ratio" visible="1">
+   </PIN>
+   <PIN pinname="Fullscreen Depthbuffer Format" slicecount="1" values="D16">
+   </PIN>
+   <PIN pinname="Windowed Depthbuffer Format" slicecount="1" values="D16">
+   </PIN>
+   <PIN pinname="Windowed Antialiasing Quality Level" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Auto Aspect Ratio" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE systemname="AxisAndGrid (DX9)" filename="%VVVV%\lib\packs\VL.EditingFramework.0.49.229-g30fb9f349f\vvvv\nodes\modules\DX9\AxisAndGrid (DX9).v4p" nodename="AxisAndGrid (DX9)" componentmode="Hidden" id="45">
+   <BOUNDS type="Node" left="582" top="11007" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <BOUNDS type="Box" left="582" top="11007">
+   </BOUNDS>
+   </NODE>
+   <NODE systemname="Group (EX9)" nodename="Group (EX9)" componentmode="Hidden" id="44">
+   <BOUNDS type="Node" left="2067" top="11862" width="5160" height="270">
+   </BOUNDS>
+   <PIN pinname="Layer 1" visible="1">
+   </PIN>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Layer 2" visible="1">
+   </PIN>
+   <PIN pinname="Layer Template Count" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Layer 3" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Layer 4" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="45" srcpinname="Layer" dstnodeid="44" dstpinname="Layer 1">
+   </LINK>
+   <LINK srcnodeid="44" srcpinname="Layer" dstnodeid="46" dstpinname="Layers">
+   </LINK>
+   <NODE systemname="Box (EX9.Geometry)" nodename="Box (EX9.Geometry)" componentmode="Hidden" id="43">
+   <BOUNDS type="Node" left="6102" top="10482" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Mesh" visible="1">
+   </PIN>
+   <PIN pinname="Width" slicecount="1" values="0.05">
+   </PIN>
+   <PIN pinname="Height" slicecount="1" values="0.05">
+   </PIN>
+   <PIN pinname="Depth" slicecount="1" values="0.05">
+   </PIN>
+   </NODE>
+   <NODE systemname="GouraudDirectional (EX9.Effect)" filename="%VVVV%\lib\nodes\effects\GouraudDirectional.fx" nodename="GouraudDirectional (EX9.Effect)" componentmode="Hidden" id="42">
+   <BOUNDS type="Node" left="5907" top="11022" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Mesh" visible="1">
+   </PIN>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Transform" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Texture" visible="-1" pintype="Input" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Texture Transform" visible="-1" pintype="Input" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Color Transform" visible="-1" pintype="Input" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Technique" visible="-1" pintype="Input" slicecount="1" values="TGouraudDirectional">
+   </PIN>
+   <PIN pinname="Technique Pass" visible="-1" pintype="Input" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Alpha" visible="-1" pintype="Input" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Power" visible="-1" pintype="Input" slicecount="1" values="25">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="43" srcpinname="Mesh" dstnodeid="42" dstpinname="Mesh">
+   </LINK>
+   <NODE systemname="Camera (Transform Softimage)" filename="%VVVV%\lib\packs\VL.EditingFramework.0.49.229-g30fb9f349f\vvvv\nodes\modules\Camera (Transform Softimage).v4p" nodename="Camera (Transform Softimage)" componentmode="Hidden" id="41">
+   <BOUNDS type="Node" left="3210" top="12672" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="View" visible="1">
+   </PIN>
+   <PIN pinname="Projection" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="ASPECTRATIO (TRANSFORM)" nodename="AspectRatio (Transform)" componentmode="Hidden" id="40">
+   <BOUNDS type="Node" left="3723" top="13512" width="945" height="270">
+   </BOUNDS>
+   <PIN pinname="Transform In" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   <PIN pinname="Aspect Height" visible="1">
+   </PIN>
+   <PIN pinname="Aspect Width" visible="1">
+   </PIN>
+   <PIN pinname="Alignment" slicecount="1" values="FitIn">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="41" srcpinname="View" dstnodeid="46" dstpinname="View">
+   </LINK>
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="39">
+   <BOUNDS type="Box" left="6003" top="8322" width="855" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="6003" top="8322" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Transform Out|">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="38">
+   <BOUNDS type="Box" left="7230" top="6432" width="945" height="525">
+   </BOUNDS>
+   <BOUNDS type="Node" left="7230" top="6432" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="8">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Y Input Value">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="|0, 0|">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="MeanError">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="36">
+   <BOUNDS type="Box" left="6564" top="7257" width="1125" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="6564" top="7257" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Y Input Value">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="|0, 0|">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="ID">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="35">
+   <BOUNDS type="Box" left="9876" top="3720" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="9876" top="3720" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Frame Count|">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="34">
+   <BOUNDS type="Box" left="8700" top="3720" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="8700" top="3720" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Timestamp">
+   </PIN>
+   </NODE>
+   <NODE systemname="RigidBodies (OptiTrack NatNet)" filename="plugins\NatNetOptiTrackRigidBodies\NatNetOptiTrackRigidBodies.csproj" nodename="RigidBodies (OptiTrack NatNet)" componentmode="Hidden" id="33">
+   <BOUNDS type="Node" left="6348" top="5997" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="IsTracked" visible="1">
+   </PIN>
+   <PIN pinname="Markers" visible="1">
+   </PIN>
+   <BOUNDS type="Box" left="6348" top="5997">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="33" srcpinname="Transform Out" dstnodeid="39" dstpinname="Input Node">
+   </LINK>
+   <LINK srcnodeid="33" srcpinname="MeanError" dstnodeid="38" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="33" srcpinname="Transform Out" dstnodeid="42" dstpinname="Transform">
+   </LINK>
+   <LINK srcnodeid="33" srcpinname="ID" dstnodeid="36" dstpinname="Y Input Value">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="32">
+   <BOUNDS type="Box" left="7008" top="9357" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="7008" top="9357" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="IsTracked">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="33" srcpinname="IsTracked" dstnodeid="32" dstpinname="Y Input Value">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="31">
+   <BOUNDS type="Box" left="2136" top="8292" width="795" height="720">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2136" top="8292" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Labeled MarkersXYZ|">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="30">
+   <BOUNDS type="Box" left="4488" top="8292" width="795" height="720">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4488" top="8292" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Other MarkersXYZ|">
+   </PIN>
+   </NODE>
+   <NODE systemname="Translate (Transform Vector)" nodename="Translate (Transform Vector)" componentmode="Hidden" id="29">
+   <BOUNDS type="Node" left="3072" top="10422" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="XYZ" visible="1" slicecount="3" values="-0.287802189588547,0.0754075422883034,-0.249175652861595">
+   </PIN>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="GouraudDirectional (EX9.Effect)" filename="%VVVV%\lib\nodes\effects\GouraudDirectional.fx" nodename="GouraudDirectional (EX9.Effect)" componentmode="Hidden" id="28">
+   <BOUNDS type="Node" left="2052" top="11007" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Mesh" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Transform" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Texture" visible="-1" pintype="Input" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Texture Transform" visible="-1" pintype="Input" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Color Transform" visible="-1" pintype="Input" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Technique" visible="-1" pintype="Input" slicecount="1" values="TGouraudDirectional">
+   </PIN>
+   <PIN pinname="Technique Pass" visible="-1" pintype="Input" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Alpha" visible="-1" pintype="Input" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Power" visible="-1" pintype="Input" slicecount="1" values="25">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="29" srcpinname="Transform Out" dstnodeid="28" dstpinname="Transform">
+   </LINK>
+   <NODE systemname="Sphere (EX9.Geometry)" nodename="Sphere (EX9.Geometry)" componentmode="Hidden" id="27">
+   <BOUNDS type="Node" left="2247" top="10422" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Mesh" visible="1">
+   </PIN>
+   <PIN pinname="Radius" slicecount="1" values="0.05">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="27" srcpinname="Mesh" dstnodeid="28" dstpinname="Mesh">
+   </LINK>
+   <NODE systemname="Markers (OptiTrack NatNet)" filename="plugins\NatNetOptiTrackLabeledMarkers\NatNetOptiTrackLabeledMarkers.csproj" nodename="Markers (OptiTrack NatNet)" componentmode="Hidden" id="26">
+   <BOUNDS type="Node" left="3831" top="5997" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Frame data" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Labeled MarkersXYZ" visible="1">
+   </PIN>
+   <PIN pinname="Other MarkersXYZ" visible="1">
+   </PIN>
+   <PIN pinname="Labeled Markers" visible="1">
+   </PIN>
+   <PIN pinname="Other Markers" visible="1">
+   </PIN>
+   <BOUNDS type="Box" left="3831" top="5997">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="26" srcpinname="Labeled MarkersXYZ" dstnodeid="31" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="26" srcpinname="Other MarkersXYZ" dstnodeid="30" dstpinname="Y Input Value">
+   </LINK>
+   <NODE systemname="Client (OptiTrack NatNet)" filename="plugins\NatNetOptiTrackClient\NatNetOptiTrackClient.csproj" nodename="Client (OptiTrack NatNet)" componentmode="Hidden" id="25">
+   <BOUNDS type="Node" left="6363" top="3102" width="5904" height="276">
+   </BOUNDS>
+   <PIN pinname="Init" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Client Version" visible="1">
+   </PIN>
+   <PIN pinname="Client IP" visible="1">
+   </PIN>
+   <PIN pinname="Server IP" visible="1">
+   </PIN>
+   <PIN pinname="Status" visible="1">
+   </PIN>
+   <PIN pinname="Client" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="25" srcpinname="Frame Count" dstnodeid="35" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="25" srcpinname="Timestamp" dstnodeid="34" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="25" srcpinname="Frame data" dstnodeid="33" dstpinname="Frame data">
+   </LINK>
+   <LINK srcnodeid="25" srcpinname="Frame data" dstnodeid="26" dstpinname="Frame data">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="24">
+   <BOUNDS type="Box" left="12216" top="3720" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="12216" top="3720" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Client Version|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="25" srcpinname="Client Version" dstnodeid="24" dstpinname="Input String">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="23">
+   <BOUNDS type="Box" left="5376" top="2052" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5376" top="2052" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Init">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="22">
+   <BOUNDS type="Box" left="12192" top="2652" width="1536" height="252">
+   </BOUNDS>
+   <BOUNDS type="Node" left="12192" top="2652" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="127.0.0.1">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="127.0.0.1">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Client IP|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="22" srcpinname="Output String" dstnodeid="25" dstpinname="Client IP">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="21">
+   <BOUNDS type="Box" left="9276" top="2652" width="936" height="252">
+   </BOUNDS>
+   <BOUNDS type="Node" left="9276" top="2652" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="127.0.0.1">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="127.0.0.1">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Server IP|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="21" srcpinname="Output String" dstnodeid="25" dstpinname="Server IP">
+   </LINK>
+   <LINK srcnodeid="41" srcpinname="Projection" dstnodeid="46" dstpinname="Projection">
+   </LINK>
+   <LINK srcnodeid="40" srcpinname="Transform Out" dstnodeid="46" dstpinname="Aspect Ratio">
+   </LINK>
+   <LINK srcnodeid="46" srcpinname="Actual Backbuffer Height" dstnodeid="40" dstpinname="Aspect Height" linkstyle="Bezier">
+   <LINKPOINT x="6084" y="16022">
+   </LINKPOINT>
+   <LINKPOINT x="5526" y="12577">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="46" srcpinname="Actual Backbuffer Width" dstnodeid="40" dstpinname="Aspect Width" linkstyle="Bezier">
+   <LINKPOINT x="6219" y="16952">
+   </LINKPOINT>
+   <LINKPOINT x="6126" y="11707">
+   </LINKPOINT>
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="20">
+   <BOUNDS type="Box" left="11052" top="3720" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="11052" top="3720" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Status">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="25" srcpinname="Status" dstnodeid="20" dstpinname="Input String">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="19">
+   <BOUNDS type="Box" left="8868" top="6957" width="3495" height="330">
+   </BOUNDS>
+   <BOUNDS type="Node" left="8868" top="6957" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="18">
+   <BOUNDS type="Box" left="10638" top="5022" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="10638" top="5022" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Send">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="17">
+   <BOUNDS type="Box" left="10068" top="6567" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="10068" top="6567" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   </NODE>
+   <NODE systemname="SendMessage (OptiTrack NatNet)" filename="plugins\OptiTrackNatNet\OptiTrackNatNet.csproj" nodename="SendMessage (OptiTrack NatNet)" componentmode="Hidden" id="16">
+   <BOUNDS type="Node" left="8868" top="5997" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Command" slicecount="1" visible="1" values="FrameRate">
+   </PIN>
+   <BOUNDS type="Box" left="8868" top="5997">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="25" srcpinname="Client" dstnodeid="16" dstpinname="Client">
+   </LINK>
+   <LINK srcnodeid="16" srcpinname="Status" dstnodeid="19" dstpinname="Input String">
+   </LINK>
+   <LINK srcnodeid="18" srcpinname="Y Output Value" dstnodeid="16" dstpinname="Send">
+   </LINK>
+   <LINK srcnodeid="16" srcpinname="Response" dstnodeid="17" dstpinname="Input String">
+   </LINK>
+   <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="15">
+   <BOUNDS type="Box" left="9453" top="5607" width="1590" height="270">
+   </BOUNDS>
+   <BOUNDS type="Node" left="9453" top="5607" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input Enum" slicecount="1" visible="1" values="FrameRate">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Command">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="15" srcpinname="Output Enum" dstnodeid="16" dstpinname="Command">
+   </LINK>
+   <LINK srcnodeid="42" srcpinname="Layer" dstnodeid="44" dstpinname="Layer 4">
+   </LINK>
+   <LINK srcnodeid="28" srcpinname="Layer" dstnodeid="44" dstpinname="Layer 2">
+   </LINK>
+   <NODE systemname="Translate (Transform Vector)" nodename="Translate (Transform Vector)" componentmode="Hidden" id="14">
+   <BOUNDS type="Node" left="4767" top="10437" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="XYZ" visible="1" slicecount="3" values="-0.287802189588547,0.0754075422883034,-0.249175652861595">
+   </PIN>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="GouraudDirectional (EX9.Effect)" filename="%VVVV%\lib\nodes\effects\GouraudDirectional.fx" nodename="GouraudDirectional (EX9.Effect)" componentmode="Hidden" id="13">
+   <BOUNDS type="Node" left="3747" top="11007" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Mesh" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Transform" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Texture" visible="-1" pintype="Input" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Texture Transform" visible="-1" pintype="Input" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Color Transform" visible="-1" pintype="Input" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Technique" visible="-1" pintype="Input" slicecount="1" values="TGouraudDirectional">
+   </PIN>
+   <PIN pinname="Technique Pass" visible="-1" pintype="Input" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Alpha" visible="-1" pintype="Input" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Power" visible="-1" pintype="Input" slicecount="1" values="25">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="14" srcpinname="Transform Out" dstnodeid="13" dstpinname="Transform">
+   </LINK>
+   <NODE systemname="Sphere (EX9.Geometry)" nodename="Sphere (EX9.Geometry)" componentmode="Hidden" id="12">
+   <BOUNDS type="Node" left="3957" top="10437" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Mesh" visible="1">
+   </PIN>
+   <PIN pinname="Radius" slicecount="1" values="0.05">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="12" srcpinname="Mesh" dstnodeid="13" dstpinname="Mesh">
+   </LINK>
+   <LINK srcnodeid="26" srcpinname="Labeled MarkersXYZ" dstnodeid="29" dstpinname="XYZ">
+   </LINK>
+   <LINK srcnodeid="26" srcpinname="Other MarkersXYZ" dstnodeid="14" dstpinname="XYZ">
+   </LINK>
+   <LINK srcnodeid="13" srcpinname="Layer" dstnodeid="44" dstpinname="Layer 3">
+   </LINK>
+   <NODE systemname="Marker (OptiTrack NatNet)" filename="plugins\OptiTrackNatNet\OptiTrackNatNet.csproj" nodename="Marker (OptiTrack NatNet)" componentmode="Hidden" id="11">
+   <BOUNDS type="Node" left="8832" top="8136" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Markers" visible="1">
+   </PIN>
+   <PIN pinname="MarkersXYZ" visible="1">
+   </PIN>
+   <PIN pinname="ID" visible="1">
+   </PIN>
+   <PIN pinname="XYZ" visible="1">
+   </PIN>
+   <BOUNDS type="Box" left="8832" top="8136">
+   </BOUNDS>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="10">
+   <BOUNDS type="Box" left="9657" top="8646" width="795" height="960">
+   </BOUNDS>
+   <BOUNDS type="Node" left="9657" top="8646" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="4" values="0,,,">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="|0, 0, 0, 1|">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="ID">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="11" srcpinname="ID" dstnodeid="10" dstpinname="Y Input Value">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="9">
+   <BOUNDS type="Box" left="8832" top="8580" width="795" height="720">
+   </BOUNDS>
+   <BOUNDS type="Node" left="8832" top="8580" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="XYZ">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="11" srcpinname="XYZ" dstnodeid="9" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="26" srcpinname="Other Markers" dstnodeid="11" dstpinname="Markers">
+   </LINK>
+   <NODE systemname="Descriptions (OptiTrack NatNet)" filename="plugins\OptiTrackNatNet\OptiTrackNatNet.csproj" nodename="Descriptions (OptiTrack NatNet)" componentmode="Hidden" id="8">
+   <BOUNDS type="Node" left="13968" top="7047" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Client" visible="1">
+   </PIN>
+   <PIN pinname="Update" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="ID" visible="1">
+   </PIN>
+   <PIN pinname="XYZ" visible="1">
+   </PIN>
+   <PIN pinname="Size" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="25" srcpinname="Client" dstnodeid="8" dstpinname="Client">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="7">
+   <BOUNDS type="Box" left="15333" top="5637" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="15333" top="5637" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="7" srcpinname="Y Output Value" dstnodeid="8" dstpinname="Update">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="6">
+   <BOUNDS type="Box" left="14463" top="8130" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="14463" top="8130" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="ID">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="8" srcpinname="ID" dstnodeid="6" dstpinname="Y Input Value">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="5">
+   <BOUNDS type="Box" left="13959" top="8703" width="795" height="720">
+   </BOUNDS>
+   <BOUNDS type="Node" left="13959" top="8703" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="XYZ">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="8" srcpinname="XYZ" dstnodeid="5" dstpinname="Y Input Value">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="4">
+   <BOUNDS type="Box" left="14925" top="7557" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="14925" top="7557" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Size">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="8" srcpinname="Size" dstnodeid="4" dstpinname="Y Input Value">
+   </LINK>
+   <PACK Name="dx11" Version="1.2">
+   </PACK>
+   <PACK Name="vvvv-Message" Version="2.9.10">
+   </PACK>
+   <PACK Name="VVVV.Packs" Version="0.2.0">
+   </PACK>
+   <PACK Name="addonpack" Version="36.0.0">
+   </PACK>
+   <NODE systemname="OnOpen (VVVV)" nodename="OnOpen (VVVV)" componentmode="Hidden" id="47">
+   <BOUNDS type="Node" left="6348" top="2652" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Simulate" visible="1">
+   </PIN>
+   <PIN pinname="Bang" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="23" srcpinname="Y Output Value" dstnodeid="47" dstpinname="Simulate">
+   </LINK>
+   <LINK srcnodeid="47" srcpinname="Bang" dstnodeid="25" dstpinname="Init">
+   </LINK>
+   </PATCH>

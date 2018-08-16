@@ -1,0 +1,8 @@
+.vs/*
+nodes/plugins/.vs/*
+*.cache
+*.txt
+nodes/plugins/obj/*
+nodes/plugins/packages/*
+packages/*
+nodes/plugins/bin/*
