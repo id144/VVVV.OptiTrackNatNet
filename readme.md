@@ -14,5 +14,8 @@ This software is developed by [Andrej Boleslavský](http://id144.org) within the
                                                                     
 Developement of this software was funded by Chronus Art Center Shanghai – 新时线媒体艺术中心 http://www.chronusartcenter.org/ and supported by OptiTrack http://optitrack.com/
 ![Chronus Art Center Shanghai – 新时线媒体艺术中心](/images/CAC.png?raw=true height="516" width="118")
-![OptiTrack!](/images/OptiTrack.png?raw=true height="344" width="81")
+
+<img src="/images/CAC.png?raw=true" width="516px" height="118px"/>
+<img src="/images/OptiTrack.png?raw=true" width="344px" height="81px"/>                                                                  
+![OptiTrack!]( height="344" width="81")
 
