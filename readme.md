@@ -12,10 +12,9 @@ If you're interested in using the plugin for commercial purposes or otherwise li
 # Credits
 This software is developed by [Andrej Boleslavský](http://id144.org) within the project Camouflage -  mixed reality game https://camouflage.org.uk/
                                                                     
-Developement of this software was funded by Chronus Art Center Shanghai – 新时线媒体艺术中心 http://www.chronusartcenter.org/ and supported by OptiTrack http://optitrack.com/
-![Chronus Art Center Shanghai – 新时线媒体艺术中心](/images/CAC.png?raw=true height="516" width="118")
+Developement of this software was funded by the Chronus Art Center Shanghai – 新时线媒体艺术中心 http://www.chronusartcenter.org/ and supported by the OptiTrack http://optitrack.com/
 
 <img src="/images/CAC.png?raw=true" width="516px" height="118px"/>
 <img src="/images/OptiTrack.png?raw=true" width="344px" height="81px"/>                                                                  
-![OptiTrack!]( height="344" width="81")
+
 
